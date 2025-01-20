@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <title>smoothie bow</title>
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="logo">
+        <nav>
+            <a href="#">Todas as receitas</a>
+            <a href="#">vegano</a>
+            <a href="#">Sem glutén</a>
+            <a href="#">Shop</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Prove o seu caminho para a felicidade!</h1>
+
+        <p>Estamos empenhados em trazer smoothies deliciosamente frescos, 
+        feito com amor, carinho e os melhores ingredientes.
+        </p>
+
+        <div>
+            <button class="button_smoothie" type="button" onclick="changeSmoothie ('banana')">
+                <img src="img/banana.png" alt="banana">
+            </button>
+            <button class="button_smoothie" type="button" onclick="changeSmoothie('morango')">
+                <img src="img/morango.png" alt="morango">
+            </button>
+            <button class="button_smoothie" type="button" onclick="changeSmoothie('kiwi')">
+                <img src="img/kiwi.png" alt="kiwi">
+            </button>
+            <button class="button_smoothie" type="button" onclick="changeSmoothie('mertilo')">
+                <img src="img/mertilho.png" alt="mertilo">
+            </button>
+        </div>
+    </main>
+
+    <div id="bowl">
+        <img src="img/bowls.png" alt="bowl's">
+    </div>
+
+    <div id="circle"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
