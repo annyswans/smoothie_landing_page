@@ -1,0 +1,53 @@
+main {
+    display: flex;
+    flex-direction: column; /*usado para alinhar os itens verticalmente*/
+    align-items: flex-start; /* Alinha os itens a esquerda*/
+    row-gap: 16px; /*espaçamento entre h1, p e div*/
+
+    width: 100vw;
+    max-width: 700px;
+}
+
+main h1 {
+    font-size: 86px;
+    line-height: 1.1; /*altura da linha de texto*/
+}
+
+main p {
+    font-size: 26px ;
+    color: #333;
+}
+
+main div {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;  /*distância dos botões*/
+    margin-top: 32px; /*distância entre div e p*/
+}
+
+.button_smoothie {
+    border: none;
+    background: transparent;
+
+    transition: all 0.4s;  /*usado para dar suavidade quando os sabores forem se mover*/
+}
+
+main div:hover .button_smoothie:hover { 
+    cursor: pointer;
+    transform: translateY(-20px); /*usado para fazer a imagem se mover para cima quando passar o cursor*/
+
+} /*main div:hover está sendo usado para que a imagem não fique opaca sem que o mouse passe por cima*/
+
+main div:hover.button_smoothie:not(:hover){
+    opacity: 0.6;
+    filter: grayscale(0.3);
+
+} /*usado para que quando o mouse não esteja em cima os outros elemtnos fiquem opacos*/
+
+.button_smoothie img {
+    width: 120px;
+    height: auto;
+}
+
+
+/**/

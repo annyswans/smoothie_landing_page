@@ -1,0 +1,25 @@
+header {
+    display: flex;  /*usado para criar layouts responsivos, alinhando itens de forma eficiente*/
+    align-items: center;
+    justify-content: space-between; /* usada para distribuir os itens dentro do contêiner*/
+
+    margin-bottom: 120px ;
+}
+
+header img {
+    width: 120px;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    column-gap: 48px; /*usada para definir o espaço entre colunas*/
+}
+
+header a {
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: 300px;
+    letter-spacing: 1px; /*controlar o espaçamento entre os caracteres de um texto*/
+}
